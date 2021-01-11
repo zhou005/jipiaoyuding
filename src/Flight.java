@@ -1,9 +1,10 @@
-public class Flight {
+public class Flight { //飞机信息
+    
     private String id;
     private String planeTypoe; //飞机类型
     private String departurAirPort; //起飞地点
     private String destinationAirPort; //目的地
-    private String departureTime; //时间
+    private String departureTime; //耗费时间
     
     public String getId() {
         return id;

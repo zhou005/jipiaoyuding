@@ -1,12 +1,12 @@
 import java.util.Date;
 
-public class Customer {
+public class Customer { //乘客
     private String id; //没有意义
     private String customerType; //乘客类型
     private String name; //姓名
     private String phone; //电话
     private String cardid; //身份证号
-    private Date birthDate;
+    private Date birthDate; //乘客生日
 
     public String getId() {
         return id;

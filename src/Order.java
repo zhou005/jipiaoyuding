@@ -1,4 +1,4 @@
-public class Order {
+public class Order { //预定
     
     private String id;
     private String customerType; //乘机人类型
