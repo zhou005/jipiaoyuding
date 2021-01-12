@@ -24,17 +24,17 @@ public class MainUI {
             if (choice == 1) {
                 String id = UUID.randomUUID().toString();
                 
-                System.out.println("请输入飞机编号：");
+                System.out.print("请输入飞机编号：");
                 String flightID = sc.next();
-                System.out.println("请输入机型：");
+                System.out.print("请输入机型：");
                 String planeTypoe = sc.next();
-                System.out.println("请输入座位数：");
+                System.out.print("请输入座位数：");
                 int currentSeatsNum = sc.nextInt();
-                System.out.println("请输入起飞机场：");
+                System.out.print("请输入起飞机场：");
                 String departurAirPort = sc.next();
-                System.out.println("请输入目的机场：");
+                System.out.print("请输入目的机场：");
                 String destinationAirPort = sc.next();
-                System.out.println("请输入起飞时间：");
+                System.out.print("请输入起飞时间：");
                 String departureTime = sc.next();
 
                 Flight flight = new Flight(id,flightID,planeTypoe,currentSeatsNum,
