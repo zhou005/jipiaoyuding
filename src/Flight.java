@@ -2,6 +2,8 @@ public class Flight { //飞机信息
     
     private String id;
     private String planeTypoe; //飞机类型
+    private String seatsnumber; // 座位号
+    private String totalseatsnum; //航班总座位
     private String departurAirPort; //起飞地点
     private String destinationAirPort; //目的地
     private String departureTime; //耗费时间
@@ -20,6 +22,22 @@ public class Flight { //飞机信息
 
     public void setPlaneTypoe(String planeTypoe) {
         this.planeTypoe = planeTypoe;
+    }
+
+    public String getSeatsnumber() {
+        return seatsnumber;
+    }
+
+    public void setSeatsnumber(String seatsnumber) {
+        this.seatsnumber = seatsnumber;
+    }
+
+    public String getTotalseatsnum() {
+        return totalseatsnum;
+    }
+
+    public void setTotalseatsnum(String totalseatsnum) {
+        this.totalseatsnum = totalseatsnum;
     }
 
     public String getDeparturAirPort() {
