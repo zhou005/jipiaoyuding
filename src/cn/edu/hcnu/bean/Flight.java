@@ -3,7 +3,7 @@ package cn.edu.hcnu.bean;
 public class Flight { //飞机信息
     
     private String id; //主键
-    private System flightID; //飞机编号
+    private String flightID; //飞机编号
     private String planeTypoe; //飞机类型
     private int currentSeatsNum; //航班总座位
     private String departurAirPort; //起飞机场
@@ -11,7 +11,7 @@ public class Flight { //飞机信息
     private String departureTime; //起飞时间
 
 
-    public Flight(String id, System flightID, String planeTypoe, int currentSeatsNum, String departurAirPort, String destinationAirPort, String departureTime) {
+    public Flight(String id, String flightID, String planeTypoe, int currentSeatsNum, String departurAirPort, String destinationAirPort, String departureTime) {
         this.id = id;
         this.flightID = flightID;
         this.planeTypoe = planeTypoe;
@@ -41,11 +41,11 @@ public class Flight { //飞机信息
         this.id = id;
     }
 
-    public System getFlightID() {
+    public String getFlightID() {
         return flightID;
     }
 
-    public void setFlightID(System flightID) {
+    public void setFlightID(String flightID) {
         this.flightID = flightID;
     }
 

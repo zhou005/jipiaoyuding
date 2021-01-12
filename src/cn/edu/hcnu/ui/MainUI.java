@@ -2,8 +2,10 @@ package cn.edu.hcnu.ui;
 
 import cn.edu.hcnu.bean.Flight;
 import cn.edu.hcnu.bll.IFlightService;
+import cn.edu.hcnu.bll.impl.FlightServiceImpl;
 
 import java.util.Scanner;
+import java.util.UUID;
 
 public class MainUI {
     public static void main(String[] args) {
@@ -20,6 +22,8 @@ public class MainUI {
             
             int choice = sc.nextInt();
             if (choice == 1) {
+                String id = UUID.randomUUID().toString();
+                
                 System.out.println("请输入飞机编号：");
                 String flightID = sc.next();
                 System.out.println("请输入机型：");
