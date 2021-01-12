@@ -1,4 +1,4 @@
-package dao;
+package cn.edu.hcnu.dao;
 
 import java.util.Set;
 

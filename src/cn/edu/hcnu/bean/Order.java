@@ -1,3 +1,7 @@
+package cn.edu.hcnu.bean;
+
+import java.util.Set;
+
 public class Order { //预定
     
     private String id;
@@ -8,7 +12,7 @@ public class Order { //预定
     private float jptgx; //机票退改险
     private float yhq; //优惠券
     private float hszj; //含税总价
-    private Customer customer [] ;
+    private Set<Customer> customer  ;
     
     public String getId() {
         return id;
@@ -74,12 +78,11 @@ public class Order { //预定
         this.hszj = hszj;
     }
 
-    public Customer[] getCustomer() {
+    public Set<Customer> getCustomer() {
         return customer;
     }
 
-    public void setCustomer(Customer[] customer) {
+    public void setCustomer(Set<Customer> customer) {
         this.customer = customer;
     }
-    
 }
