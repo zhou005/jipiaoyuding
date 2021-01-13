@@ -22,7 +22,7 @@ public class MainUI {
             
             int choice = sc.nextInt();
             if (choice == 1) {
-                String id = UUID.random1UUID().toString();
+                String id = UUID.randomUUID().toString();
 
 
                 System.out.print("请输入飞机编号：");
