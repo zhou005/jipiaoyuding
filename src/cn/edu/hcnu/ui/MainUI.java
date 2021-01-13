@@ -4,11 +4,13 @@ import cn.edu.hcnu.bean.Flight;
 import cn.edu.hcnu.bll.IFlightService;
 import cn.edu.hcnu.bll.impl.FlightServiceImpl;
 
+import java.sql.SQLException;
 import java.util.Scanner;
+import java.util.Set;
 import java.util.UUID;
 
 public class MainUI {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         Scanner sc = new Scanner(System.in); //接受键盘输入
         while (true) {
             System.out.println("请输入相应的数字进行操作");
@@ -42,6 +44,18 @@ public class MainUI {
                         departurAirPort,destinationAirPort,departureTime);
                 IFlightService iFlightService = new FlightServiceImpl();
                 iFlightService.insterFlight(flight);
+
+                IFlightService iFlightService1 = new FlightServiceImpl();
+                try {
+                    iFlightService.insterFlight(flight);
+                } catch (SQLException e) {
+                    String errorMessage = e.getMessage();
+                    String errorID = errorMessage.substring(0,8);
+                    System.out.println("错误编号："+errorID);
+                    if ("ORA-12899".equals(errorID)) {
+                        System.out.println("某列的值过大，请仔细检查");
+                    }
+                }
            
             }
         }

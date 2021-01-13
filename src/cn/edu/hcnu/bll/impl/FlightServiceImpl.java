@@ -5,6 +5,7 @@ import cn.edu.hcnu.bll.IFlightService;
 import cn.edu.hcnu.dao.IFlightDao;
 import cn.edu.hcnu.dao.impl.FlightDaoIml;
 
+import java.sql.SQLException;
 import java.util.Set;
 
 public class FlightServiceImpl implements IFlightService {
@@ -16,7 +17,8 @@ public class FlightServiceImpl implements IFlightService {
     }
     
     @Override
-    public void insterFlight(Flight flight) {
+    public void insterFlight(Flight flight) throws SQLException {
+        iFlightDao.insterFlight(flight);
         
         
     }
