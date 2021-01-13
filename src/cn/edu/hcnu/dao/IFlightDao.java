@@ -1,5 +1,7 @@
 package cn.edu.hcnu.dao;
 
+import cn.edu.hcnu.bean.Flight;
+
 import java.util.Set;
 
 public interface IFlightDao<Flight> {

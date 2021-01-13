@@ -1,6 +1,7 @@
 package cn.edu.hcnu.bean;
 
 import java.util.Date;
+import java.util.Set;
 
 public class Customer { //乘客
     private String id; //没有意义
@@ -9,6 +10,7 @@ public class Customer { //乘客
     private String phone; //电话
     private String cardid; //身份证号
     private Date birthDate; //乘客生日
+    private Set<Order> orderSet;
 
     public String getId() {
         return id;
@@ -56,5 +58,13 @@ public class Customer { //乘客
 
     public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
+    }
+
+    public Set<Order> getOrderSet() {
+        return orderSet;
+    }
+
+    public void setOrderSet(Set<Order> orderSet) {
+        this.orderSet = orderSet;
     }
 }
