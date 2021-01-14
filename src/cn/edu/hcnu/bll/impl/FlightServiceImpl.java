@@ -32,7 +32,7 @@ public class FlightServiceImpl implements IFlightService {
     }
 
     @Override
-    public Flight getFlightByDepartureAirPort(String departureAirPort) {
+    public Flight getFlightByDepartureAirPort(String departureAirPort) throws SQLException {
         return null;
     }
 

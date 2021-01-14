@@ -12,7 +12,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class MainUI {
-    public static void main(String[] args) {
+    public static <flight> void main(String[] args) {
         Scanner sc = new Scanner(System.in);//接受键盘输入
         while (true) {
             System.out.println("请输入相应的数字进行操作：");
